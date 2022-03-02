@@ -1,9 +1,17 @@
 # Weather-CLine
 
-A basic command line weather interface for python. Provides the current weather for a specific location, with metric support, along with a five day forecast option, with intervals of three hours. In order for it to work, you must have the following:
+A basic command line weather interface for Python. It provides the current weather for a specific location with support for metric units (Celsius, centimeters) and a five day forecast. The program requirements are the following:
 
 - Python >3.4
 - Pip3 package installer
 - The packages: **requests**, **json**, **argparse**, **prettytable**, **colorama**, and **dateutil**.
 
-All you need to do is put the batch/bash file on your system path, and edit the file to replace the "path/to/file" with whatever the path is to the **.py** file. If you have your own Open Weather API Key (they're free!), please use it instead of the provided one, in order to reduce the load on the key. This program has been tested working on both **Windows 10** and **Debian/Ubuntu**. For reference, *--f* adds the forecast, and *--c* converts to metric units.
+First the batch/bash files must be added to the system path, and the "path/to/file" should be replaced with the path to the **.py** file. If you have your own Open Weather API Key (they're free!), please use it instead of the provided one to reduce load on the provided key. This program has been tested on both **Windows 10** and **Ubuntu 16**.
+
+## Documentation
+
+To find the current weather for a particular location, run:
+```
+weather *insert location here* [--c] [--f]
+```
+Adding the --f and --c flags adds the five day forecast and metric units respectively.
